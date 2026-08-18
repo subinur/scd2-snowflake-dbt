@@ -37,8 +37,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models: 
   scd2-snoflake-dbt:
-    example:
-      +materialized: view
     silver:
       +materialized: table
     gold:
