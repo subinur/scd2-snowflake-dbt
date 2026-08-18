@@ -9,6 +9,14 @@ config-version: 2
 # This setting configures which "profile" dbt uses for this project.
 profile: 'default'
 
+vars: 
+  db_name: SCD2DB
+  schema_name: BRONZE
+  file_format: SCD2DB.BRONZE.CSV_FORMAT
+  purge_status: FALSE
+  stage_name: SCD2DB.BRONZE.SCD2_S3_STAGE
+
+
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
 # found in the "models/" directory. You probably won't need to change these!
